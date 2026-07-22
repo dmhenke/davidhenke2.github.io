@@ -1,6 +1,7 @@
 ---
 layout: about
 title: About
+permalink: / # homepage — this is what generates index.html at the site root
 description: David M. Henke — computational biologist at Baylor College of Medicine building network-informed machine learning for precision oncology.
 profile:
   align: right
