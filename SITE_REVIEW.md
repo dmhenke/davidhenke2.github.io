@@ -28,11 +28,12 @@ latest_posts:
 
 This is the single highest-return change. Everything else is polish.
 
-**Location contradiction.** `about.md` profile says *Salt Lake City, UT*;
-`_data/cv.yml` and every experience entry say *Houston, TX / Baylor College of
-Medicine* (BCM is in Houston). Pick one and make it consistent.
+**Location contradiction.** `about.md` profile says _Salt Lake City, UT_;
+`_data/cv.yml` and every experience entry say _Houston, TX / Baylor College of
+Medicine_ (BCM is in Houston). Pick one and make it consistent.
 
 **Dead / placeholder assets:**
+
 - `_pages/cv.md` → `cv_pdf: /assets/pdf/example_pdf.pdf` and
   `_data/socials.yml` → `cv_pdf: ""`. The CV download points at the demo file.
 - `_data/socials.yml` → `email: ""`. No contact email is set.
@@ -54,24 +55,24 @@ Delete or hide from nav.
 **Cut the throat-clearing open.** `about.md` currently leads with "This is my
 personal professional page. Here you'll find an overview of my research…" — it
 tells instead of shows and wastes the most valuable real estate (and the SEO
-meta description). The *second* half — the network-biology research narrative —
+meta description). The _second_ half — the network-biology research narrative —
 is genuinely strong. Promote it to the top; delete the meta paragraph.
 
 **Converge on one identity line.** Three different self-descriptions are live:
 about = "Computational biologist… biomarker discovery, precision oncology, ML";
 `cv.yml` label = "Computational Biologist"; `cv.yml` summary leads with
 "biostatistician… viral and human genetics." Pick one positioning and repeat it
-everywhere. Recommended differentiator: *network-informed machine learning for
-precision oncology — ~2 decades, R-first.*
+everywhere. Recommended differentiator: _network-informed machine learning for
+precision oncology — ~2 decades, R-first._
 
 **Surface the marquee credential.** The npj Precision Oncology paper (2025,
 doi:10.1038/s41698-025-00825-9) is the strongest signal on the site but is
 buried in a one-line news item. Feature it: enable `selected_papers` (above) and
 add a one-line "Featured work" callout on the about page.
 
-**Move quantified wins up.** The CV holds the measurable impact — *453 cancer
+**Move quantified wins up.** The CV holds the measurable impact — _453 cancer
 targets × 1,048 DepMap cell lines; recovered GAB2 as an EGFR dependency; secured
-orphan-drug designation; built the cfNIPT algorithm.* These belong on the about
+orphan-drug designation; built the cfNIPT algorithm._ These belong on the about
 page where attention lands, not only in the CV.
 
 **Add missing social proof.** `scholar_userid` is set but Google Scholar isn't
@@ -82,7 +83,7 @@ surfaced on the homepage, and there's no ORCID. Add both to `_data/socials.yml`.
 ## 3. Avant-garde design direction
 
 The site is the recognizable stock al-folio look. The differentiators below are
-avant-garde *and* on-brand, because they visualize the actual research rather
+avant-garde _and_ on-brand, because they visualize the actual research rather
 than decorate around it.
 
 **Make the hero the work.** Replace the static circular headshot + paragraph
