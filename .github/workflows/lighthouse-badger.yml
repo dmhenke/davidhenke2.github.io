@@ -22,7 +22,9 @@ env:
 
 # TRIGGERS
 on:
-  page_build:
+  # page_build disabled: it fires on every GitHub Pages build and fails unless the
+  # LIGHTHOUSE_BADGER_TOKEN secret is configured. Run manually instead if wanted.
+  # page_build:
   # schedule: # Check your schedule here => https://crontab.guru/
   #   - cron: '55 23 * * 0' # e.g. every Sunday at 23:55
   #
