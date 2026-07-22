@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400" role="img" aria-labelledby="hmpvTitle hmpvDesc">
+  <title id="hmpvTitle">Human metapneumovirus (HMPV) virion</title>
+  <desc id="hmpvDesc">
+    Illustration of a human metapneumovirus particle: a pleomorphic enveloped virion of the family Pneumoviridae,
+    densely studded with short fusion (F) and attachment (G) glycoprotein spikes, enclosing a helical
+    ribonucleoprotein complex of negative-sense single-stranded RNA.
+  </desc>
+
+  <defs>
+    <radialGradient id="hmpvBg" cx="72%" cy="18%" r="95%">
+      <stop offset="0%" stop-color="#0f3330" />
+      <stop offset="100%" stop-color="#0a1315" />
+    </radialGradient>
+
+    <radialGradient id="hmpvEnv" cx="34%" cy="28%" r="80%">
+      <stop offset="0%" stop-color="#34d399" stop-opacity="0.5" />
+      <stop offset="65%" stop-color="#0f9d7a" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#0a5f4d" stop-opacity="0.72" />
+    </radialGradient>
+
+    <!-- Short fusion (F) glycoprotein spike -->
+    <g id="hmpvF">
+      <line x1="0" y1="-86" x2="0" y2="-103" stroke="#6ee7b7" stroke-width="3.6" stroke-linecap="round" />
+      <circle cx="0" cy="-107" r="5" fill="#6ee7b7" />
+    </g>
+
+    <!-- Slender attachment (G) glycoprotein -->
+    <g id="hmpvG">
+      <line x1="0" y1="-86" x2="0" y2="-112" stroke="#a7f3d0" stroke-width="2.2" stroke-linecap="round" />
+      <circle cx="0" cy="-115" r="3" fill="#d1fae5" />
+    </g>
+  </defs>
+
+  <rect width="600" height="400" fill="url(#hmpvBg)" />
+
+  <!-- scale() makes the particle ovoid — pneumoviruses are pleomorphic, not truly spherical -->
+  <g transform="translate(300,200) scale(1.16,0.93)">
+    <!-- Dense glycoprotein fringe: alternating F and G spikes every 15 degrees -->
+    <g>
+      <use href="#hmpvF" transform="rotate(0)" />
+      <use href="#hmpvG" transform="rotate(15)" />
+      <use href="#hmpvF" transform="rotate(30)" />
+      <use href="#hmpvG" transform="rotate(45)" />
+      <use href="#hmpvF" transform="rotate(60)" />
+      <use href="#hmpvG" transform="rotate(75)" />
+      <use href="#hmpvF" transform="rotate(90)" />
+      <use href="#hmpvG" transform="rotate(105)" />
+      <use href="#hmpvF" transform="rotate(120)" />
+      <use href="#hmpvG" transform="rotate(135)" />
+      <use href="#hmpvF" transform="rotate(150)" />
+      <use href="#hmpvG" transform="rotate(165)" />
+      <use href="#hmpvF" transform="rotate(180)" />
+      <use href="#hmpvG" transform="rotate(195)" />
+      <use href="#hmpvF" transform="rotate(210)" />
+      <use href="#hmpvG" transform="rotate(225)" />
+      <use href="#hmpvF" transform="rotate(240)" />
+      <use href="#hmpvG" transform="rotate(255)" />
+      <use href="#hmpvF" transform="rotate(270)" />
+      <use href="#hmpvG" transform="rotate(285)" />
+      <use href="#hmpvF" transform="rotate(300)" />
+      <use href="#hmpvG" transform="rotate(315)" />
+      <use href="#hmpvF" transform="rotate(330)" />
+      <use href="#hmpvG" transform="rotate(345)" />
+    </g>
+
+    <!-- Lipid envelope -->
+    <circle r="86" fill="url(#hmpvEnv)" stroke="#6ee7b7" stroke-width="2.4" stroke-opacity="0.75" />
+    <circle r="77" fill="none" stroke="#6ee7b7" stroke-width="1" stroke-opacity="0.28" />
+
+    <!-- Helical ribonucleoprotein: coiled (−)ssRNA wound with N protein -->
+    <g
+      fill="none"
+      stroke="#d1fae5"
+      stroke-width="3"
+      stroke-opacity="0.85"
+      stroke-linecap="round"
+      transform="rotate(-18)"
+    >
+      <ellipse cx="-45" cy="0" rx="7.5" ry="20" />
+      <ellipse cx="-30" cy="0" rx="7.5" ry="20" />
+      <ellipse cx="-15" cy="0" rx="7.5" ry="20" />
+      <ellipse cx="0" cy="0" rx="7.5" ry="20" />
+      <ellipse cx="15" cy="0" rx="7.5" ry="20" />
+      <ellipse cx="30" cy="0" rx="7.5" ry="20" />
+      <ellipse cx="45" cy="0" rx="7.5" ry="20" />
+    </g>
+    <path
+      d="M -56 -20 C -20 -34, 20 -6, 56 -20"
+      fill="none"
+      stroke="#6ee7b7"
+      stroke-width="2"
+      stroke-opacity="0.45"
+      stroke-linecap="round"
+      transform="rotate(-18)"
+    />
+  </g>
+</svg>
