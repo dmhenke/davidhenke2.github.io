@@ -2,7 +2,7 @@
 layout: page
 title: HMPV Research
 description: Bioinformatics research on Human Metapneumovirus (HMPV) using computational methods for genomic analysis.
-img: assets/img/publication_preview/wave-mechanics.gif
+img: assets/img/hmpv.svg
 importance: 4
 category: work
 github: https://github.com/dmhenke/hmpv_research

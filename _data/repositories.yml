@@ -1,14 +1,12 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - dmhenke
 
 repo_description_lines_max: 2
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - dmhenke/BioPrimeLASSO
+  - dmhenke/Preprint_Digest
+  - dmhenke/hmpv_research
+  - dmhenke/Article_Coronavirus_Phylogeny
+  - dmhenke/Individual_Deployment_LLM
+  - dmhenke/LLM_GColabDeployment

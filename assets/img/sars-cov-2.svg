@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400" role="img" aria-labelledby="covTitle covDesc">
+  <title id="covTitle">SARS-CoV-2 virion</title>
+  <desc id="covDesc">
+    Illustration of a coronavirus particle: a roughly spherical lipid envelope studded with club-shaped spike (S)
+    glycoprotein trimers that form the characteristic corona, with membrane (M) and envelope (E) proteins in the
+    bilayer and a coiled single-stranded RNA genome inside.
+  </desc>
+
+  <defs>
+    <radialGradient id="covBg" cx="28%" cy="18%" r="95%">
+      <stop offset="0%" stop-color="#123330" />
+      <stop offset="100%" stop-color="#0a1315" />
+    </radialGradient>
+
+    <radialGradient id="covEnv" cx="35%" cy="30%" r="78%">
+      <stop offset="0%" stop-color="#2dd4bf" stop-opacity="0.55" />
+      <stop offset="65%" stop-color="#0d9488" stop-opacity="0.42" />
+      <stop offset="100%" stop-color="#0b5f57" stop-opacity="0.7" />
+    </radialGradient>
+
+    <!-- Club-shaped spike (S) trimer, drawn pointing up from the origin -->
+    <g id="covSpike">
+      <line x1="0" y1="-90" x2="0" y2="-116" stroke="#5eead4" stroke-width="4.5" stroke-linecap="round" />
+      <ellipse cx="0" cy="-124" rx="11" ry="9" fill="#5eead4" />
+      <ellipse cx="-4" cy="-127" rx="4" ry="3" fill="#c8fdf0" opacity="0.7" />
+    </g>
+
+    <!-- Membrane protein nub -->
+    <g id="covM">
+      <rect x="-3.5" y="-96" width="7" height="9" rx="3" fill="#a7f3e4" opacity="0.85" />
+    </g>
+  </defs>
+
+  <rect width="600" height="400" fill="url(#covBg)" />
+
+  <g transform="translate(300,200)">
+    <!-- Corona of spike trimers -->
+    <g>
+      <use href="#covSpike" transform="rotate(0)" />
+      <use href="#covSpike" transform="rotate(18)" />
+      <use href="#covSpike" transform="rotate(36)" />
+      <use href="#covSpike" transform="rotate(54)" />
+      <use href="#covSpike" transform="rotate(72)" />
+      <use href="#covSpike" transform="rotate(90)" />
+      <use href="#covSpike" transform="rotate(108)" />
+      <use href="#covSpike" transform="rotate(126)" />
+      <use href="#covSpike" transform="rotate(144)" />
+      <use href="#covSpike" transform="rotate(162)" />
+      <use href="#covSpike" transform="rotate(180)" />
+      <use href="#covSpike" transform="rotate(198)" />
+      <use href="#covSpike" transform="rotate(216)" />
+      <use href="#covSpike" transform="rotate(234)" />
+      <use href="#covSpike" transform="rotate(252)" />
+      <use href="#covSpike" transform="rotate(270)" />
+      <use href="#covSpike" transform="rotate(288)" />
+      <use href="#covSpike" transform="rotate(306)" />
+      <use href="#covSpike" transform="rotate(324)" />
+      <use href="#covSpike" transform="rotate(342)" />
+    </g>
+
+    <!-- Lipid envelope -->
+    <circle r="90" fill="url(#covEnv)" stroke="#5eead4" stroke-width="2.5" stroke-opacity="0.75" />
+    <circle r="80" fill="none" stroke="#5eead4" stroke-width="1" stroke-opacity="0.3" />
+
+    <!-- Membrane / envelope proteins embedded in the bilayer -->
+    <g>
+      <use href="#covM" transform="rotate(9)" />
+      <use href="#covM" transform="rotate(45)" />
+      <use href="#covM" transform="rotate(99)" />
+      <use href="#covM" transform="rotate(135)" />
+      <use href="#covM" transform="rotate(189)" />
+      <use href="#covM" transform="rotate(225)" />
+      <use href="#covM" transform="rotate(279)" />
+      <use href="#covM" transform="rotate(315)" />
+    </g>
+
+    <!-- Coiled (+)ssRNA genome with nucleocapsid beads -->
+    <path
+      d="M -54 14 C -38 -26, -14 30, 6 -8 S 40 20, 56 -18"
+      fill="none"
+      stroke="#c8fdf0"
+      stroke-width="3.4"
+      stroke-opacity="0.9"
+      stroke-linecap="round"
+    />
+    <path
+      d="M -50 34 C -30 4, -6 48, 16 18 S 44 40, 54 16"
+      fill="none"
+      stroke="#a7f3e4"
+      stroke-width="2.4"
+      stroke-opacity="0.55"
+      stroke-linecap="round"
+    />
+    <circle cx="-30" cy="-2" r="4.2" fill="#c8fdf0" opacity="0.8" />
+    <circle cx="6" cy="-8" r="4.2" fill="#c8fdf0" opacity="0.8" />
+    <circle cx="40" cy="3" r="4.2" fill="#c8fdf0" opacity="0.8" />
+  </g>
+</svg>
