@@ -1,0 +1,113 @@
+/*******************************************************************************
+ * Animated protein–interaction network hero (about page).
+ ******************************************************************************/
+
+@use "variables" as v;
+
+.hero-network {
+  position: relative;
+  width: 100%;
+  min-height: 300px;
+  margin: -0.5rem 0 2.2rem;
+  padding: 3.2rem 1.5rem 3rem;
+  border-radius: 14px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  isolation: isolate;
+  background:
+    radial-gradient(120% 140% at 15% 0%, color-mix(in srgb, var(--global-theme-color) 16%, transparent), transparent 60%), var(--global-card-bg-color);
+  border: 1px solid var(--global-divider-color);
+}
+
+.hero-network__canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.hero-network__inner {
+  max-width: 44rem;
+}
+
+.hero-network__eyebrow {
+  display: inline-block;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--global-theme-color);
+  margin-bottom: 0.6rem;
+}
+
+.hero-network__title {
+  font-family: "Spectral", Georgia, serif;
+  font-weight: 600;
+  font-size: clamp(2.1rem, 5vw, 3.2rem);
+  line-height: 1.05;
+  margin: 0 0 0.5rem;
+
+  span {
+    color: var(--global-text-color-light);
+    font-weight: 400;
+  }
+}
+
+.hero-network__tagline {
+  font-size: clamp(1rem, 2.2vw, 1.25rem);
+  color: var(--global-text-color);
+  max-width: 34rem;
+  margin: 0 0 1.1rem;
+}
+
+.hero-network__cta {
+  display: inline-flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+
+  a {
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 0.45rem 0.95rem;
+    border-radius: 999px;
+    text-decoration: none;
+    border: 1px solid var(--global-theme-color);
+    color: var(--global-theme-color);
+    background: transparent;
+    transition:
+      background 0.18s ease,
+      color 0.18s ease;
+
+    &:hover {
+      background: var(--global-theme-color);
+      color: var(--global-hover-text-color);
+      text-decoration: none;
+    }
+
+    &.hero-network__cta--solid {
+      background: var(--global-theme-color);
+      color: var(--global-hover-text-color);
+      &:hover {
+        background: transparent;
+        color: var(--global-theme-color);
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-network {
+    padding: 2.2rem 1.1rem;
+    min-height: 240px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-network__canvas {
+    // JS also halts; this is a belt-and-suspenders guard.
+    opacity: 0.9;
+  }
+}

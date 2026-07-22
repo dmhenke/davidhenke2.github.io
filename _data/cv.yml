@@ -1,0 +1,144 @@
+cv:
+  name: David M. Henke
+  label: Computational Biologist
+  location: Houston, TX
+  summary: >
+    Computational biologist and biostatistician with nearly two decades of experience
+    advancing public health and biomedical research in viral and human genetics.
+    Proven success leading interdisciplinary collaborations, guiding research design,
+    mentoring team members, and delivering impactful results through statistical
+    modeling, machine learning, and bioinformatics.
+
+  social_networks:
+    - network: GitHub
+      username: dmhenke
+    - network: LinkedIn
+      username: henkedavid
+    - network: X
+      username: henke_tweets
+
+  sections:
+    Experience:
+      - company: Baylor College of Medicine
+        position: Senior Biostatistician
+        location: Houston, TX
+        url: https://www.bcm.edu
+        start_date: 2017-12
+        end_date: present
+        highlights:
+          - Lead data-driven arm of clinical and basic science research in viral genomics and clinical biomarker discovery
+          - Direct cross-functional teams of clinicians, computational biologists, and epidemiologists across multiple NIH- and industry-sponsored projects
+          - Developed BioPrimeLASSO — a network-informed LASSO framework applied to 453 cancer targets across 1,048 DepMap cell lines — published in npj Precision Oncology (2025)
+          - Spearheaded SARS-CoV-2 pandemic response programs balancing data urgency with scientific rigor
+          - Peer reviewer for npj; advise students and collaborators on data-based research design
+          - Co-lead grant and manuscript submissions across virology, oncology, and genomics
+
+      - company: Baylor College of Medicine
+        position: Statistician
+        location: Houston, TX
+        start_date: 2016-07
+        end_date: 2017-11
+        highlights:
+          - Managed multiple simultaneous projects resulting in several peer-reviewed publications
+          - Applied advanced non-linear regression models to reveal associations between genetic variables and clinical outcomes in longitudinal and cross-sectional data
+
+      - company: Baylor College of Medicine
+        position: Bioinformatician
+        location: Houston, TX
+        start_date: 2015-03
+        end_date: 2016-06
+        highlights:
+          - Developed bioinformatic pipelines to process and analyze terabytes of next-generation sequencing datasets
+          - Engineered algorithm enabling clinical non-invasive prenatal testing (cfNIPT)
+          - Leveraged high-performance computing to align millions of sequencing reads to the human genome
+          - Built interactive web applications to support collaborative data analysis (R Shiny)
+
+      - company: Independent Statistical Consultant
+        position: Statistical Advisor
+        location: Chapel Hill, NC · Houston, TX · Remote
+        start_date: 2013-04
+        end_date: present
+        highlights:
+          - Clients include Renovion, Baylor College of Medicine, UNC-Chapel Hill, and PGENI
+          - Contributed investor deck analysis and preliminary clinical data visualization that secured orphan drug designation for an early-stage pharmaceutical company
+          - Designed study protocols, analysis plans, IRB forms, and clinical research instruments
+          - Analyzed data for sample size, interim statistics, and exploratory outcome associations across pharmacological and medical device studies
+
+    Education:
+      - institution: University of North Carolina Gillings School of Global Public Health
+        location: Chapel Hill, NC
+        url: https://sph.unc.edu
+        area: Biostatistics
+        studyType: Master of Public Health (MPH)
+        start_date: 2012
+        end_date: 2014
+        highlights:
+          - "Thesis: Logistic Regression Modeling — Compensating for an Incomplete Covariate via Use of Weights"
+
+      - institution: University of Colorado Boulder
+        location: Boulder, CO
+        url: https://www.colorado.edu
+        area: "Biochemistry (Minor: Chemistry)"
+        studyType: Bachelor of Arts
+        start_date: 2004
+        end_date: 2008
+
+    Skills:
+      - name: Statistical & Machine Learning
+        level: Expert
+        icon: fa-solid fa-chart-line
+        keywords: "Regularized Regression (LASSO, adaptive), Non-linear & Longitudinal Modeling, Unsupervised & Supervised Machine Learning, High-Dimensional Feature Selection"
+
+      - name: Bioinformatics & Genomics
+        level: Expert
+        icon: fa-solid fa-dna
+        keywords: "NGS, RNA-seq, WGS, DepMap, DEMETER2, Chronos, HPC, STRING DB PPI Networks"
+
+      - name: Programming & Tools
+        level: Expert
+        icon: fa-solid fa-code
+        keywords: "R, Python, SAS, Bash, MySQL, GitHub"
+
+      - name: Interactive Web & Visualization
+        level: Proficient
+        icon: fa-solid fa-globe
+        keywords: "R Shiny, GitHub Pages, Adobe Illustrator, Microsoft Suite"
+
+      - name: Leadership & Communication
+        level: Expert
+        icon: fa-solid fa-users
+        keywords: "Project Strategy, Scientific Team Leadership, Mentorship & Training, Grant & Manuscript Development, Peer Review, Conference Presentations"
+
+    Projects:
+      - name: BioPrimeLASSO
+        summary: >
+          R package incorporating protein–protein interaction network scores from STRING DB
+          into the LASSO regularization penalty. Applied to 453 cancer targets across
+          1,048 DepMap cell lines; recovered GAB2 as an EGFR dependency biomarker.
+        highlights:
+          - Published in npj Precision Oncology (2025)
+          - "doi: 10.1038/s41698-025-00825-9"
+        url: https://github.com/dmhenke/BioPrimeLASSO
+
+      - name: Preprint Digest
+        summary: Automated daily LLM-powered digest of bioRxiv and medRxiv preprints.
+        url: https://dmhenke.github.io/Preprint_Digest/
+
+      - name: Individual LLM Deployment
+        summary: Framework for deploying open-source LLMs on personal or institutional hardware.
+        url: https://dmhenke.github.io/Individual_Deployment_LLM/
+
+      - name: LLM Google Colab Deployment
+        summary: Ready-to-run notebooks for GPU-accelerated LLM inference in Google Colab.
+        url: https://dmhenke.github.io/LLM_GColabDeployment/
+
+    Certificates:
+      - name: Innovation & Business Strategy
+        date: 2019
+        issuer: Rice Alliance for Technology & Entrepreneurship
+        icon: fa-solid fa-seedling
+
+    Interests:
+      - name: Outside the Lab
+        icon: fa-solid fa-person-biking
+        keywords: "Tae Kwon Do, Distance Cycling, Epicurean Home Cooking, German (Limited Working Proficiency)"

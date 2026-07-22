@@ -1,0 +1,145 @@
+<!-- Animated protein–interaction network hero -->
+<section class="hero-network" aria-label="Introduction">
+  <canvas class="hero-network__canvas" id="ppi-network" aria-hidden="true"></canvas>
+  <div class="hero-network__inner">
+    <span class="hero-network__eyebrow">{{ page.hero_eyebrow | default: 'Computational Biology · Precision Oncology' }}</span>
+    <h1 class="hero-network__title">
+      {% if site.title == 'blank' %}
+        {{ site.first_name }}
+        <span>{{ site.middle_name }}</span> {{ site.last_name }}
+      {% else %}
+        {{ site.title }}
+      {% endif %}
+    </h1>
+    <p class="hero-network__tagline">
+      {{ page.hero_tagline | default: 'Network-informed machine learning that teaches models what biology already knows.' }}
+    </p>
+    <div class="hero-network__cta">
+      <a class="hero-network__cta--solid" href="{{ '/publications/' | relative_url }}">Publications</a>
+      <a href="{{ '/projects/' | relative_url }}">Projects</a>
+      <a href="{{ '/cv/' | relative_url }}">CV</a>
+    </div>
+  </div>
+</section>
+
+<script>
+  (function () {
+    var canvas = document.getElementById('ppi-network');
+    if (!canvas) return;
+    var ctx = canvas.getContext('2d');
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    var nodes = [];
+    var W = 0,
+      H = 0,
+      dpr = Math.min(window.devicePixelRatio || 1, 2);
+    var raf = null;
+
+    function accent() {
+      var c = getComputedStyle(document.documentElement).getPropertyValue('--global-theme-color').trim();
+      return c || '#0d9488';
+    }
+
+    function hexToRgb(hex) {
+      hex = hex.replace('#', '');
+      if (hex.length === 3)
+        hex = hex
+          .split('')
+          .map(function (x) {
+            return x + x;
+          })
+          .join('');
+      var n = parseInt(hex, 16);
+      return [(n >> 16) & 255, (n >> 8) & 255, n & 255];
+    }
+
+    function resize() {
+      var rect = canvas.getBoundingClientRect();
+      W = rect.width;
+      H = rect.height;
+      canvas.width = W * dpr;
+      canvas.height = H * dpr;
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      var target = Math.round((W * H) / 14000);
+      target = Math.max(18, Math.min(46, target));
+      nodes = [];
+      for (var i = 0; i < target; i++) {
+        nodes.push({
+          x: Math.random() * W,
+          y: Math.random() * H,
+          vx: (Math.random() - 0.5) * 0.28,
+          vy: (Math.random() - 0.5) * 0.28,
+          r: 1.6 + Math.random() * 2.6,
+        });
+      }
+    }
+
+    function draw() {
+      var rgb = hexToRgb(accent());
+      var col = rgb[0] + ',' + rgb[1] + ',' + rgb[2];
+      ctx.clearRect(0, 0, W, H);
+      var maxD = 132;
+
+      for (var i = 0; i < nodes.length; i++) {
+        var a = nodes[i];
+        for (var j = i + 1; j < nodes.length; j++) {
+          var b = nodes[j];
+          var dx = a.x - b.x,
+            dy = a.y - b.y;
+          var d = Math.sqrt(dx * dx + dy * dy);
+          if (d < maxD) {
+            var o = (1 - d / maxD) * 0.5;
+            ctx.strokeStyle = 'rgba(' + col + ',' + o.toFixed(3) + ')';
+            ctx.lineWidth = 1;
+            ctx.beginPath();
+            ctx.moveTo(a.x, a.y);
+            ctx.lineTo(b.x, b.y);
+            ctx.stroke();
+          }
+        }
+      }
+      for (var k = 0; k < nodes.length; k++) {
+        var p = nodes[k];
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+        ctx.fillStyle = 'rgba(' + col + ',0.85)';
+        ctx.fill();
+      }
+    }
+
+    function step() {
+      for (var i = 0; i < nodes.length; i++) {
+        var p = nodes[i];
+        p.x += p.vx;
+        p.y += p.vy;
+        if (p.x < 0 || p.x > W) p.vx *= -1;
+        if (p.y < 0 || p.y > H) p.vy *= -1;
+      }
+      draw();
+      raf = requestAnimationFrame(step);
+    }
+
+    function start() {
+      resize();
+      if (reduce) {
+        draw();
+        return;
+      }
+      if (raf) cancelAnimationFrame(raf);
+      step();
+    }
+
+    var t;
+    window.addEventListener('resize', function () {
+      clearTimeout(t);
+      t = setTimeout(start, 150);
+    });
+    // Redraw on theme toggle so colors track light/dark.
+    var obs = new MutationObserver(function () {
+      if (reduce) draw();
+    });
+    obs.observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+
+    start();
+  })();
+</script>
