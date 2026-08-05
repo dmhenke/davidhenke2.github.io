@@ -1,9 +1,15 @@
-# social media links for David M. Henke
+# Social media links for David M. Henke
+#
+# IMPORTANT: jekyll-socials renders an icon for any key that is *present* in
+# this file — an empty string ("") is truthy in Liquid, so `cv_pdf: ""` still
+# produced a broken CV icon. To hide an icon, delete or comment out the key.
+# Do not "disable" it by setting it to "" or false.
 github_username: dmhenke
 linkedin_username: henkedavid
 x_username: henke_tweets
 scholar_userid: fCbxT2wAAAAJ
-rss_icon: false
-email: ""
-cv_pdf: ""
-inspirehep_id: ""
+# orcid_id:            # add once you have an ORCID — high value for an academic page
+# rss_icon:            # intentionally omitted
+# email:               # intentionally omitted (see contact_note in _config.yml)
+# cv_pdf:              # intentionally omitted — the CV tab covers this
+# inspirehep_id:       # intentionally omitted — INSPIRE-HEP is high-energy physics

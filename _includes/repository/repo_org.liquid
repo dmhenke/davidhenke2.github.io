@@ -1,0 +1,31 @@
+{% comment %}
+  Renders a GitHub *organization* as a linked card.
+  github-readme-stats' /api/ endpoint only supports user accounts, so orgs get
+  a lightweight card built from the org avatar (https://github.com/<org>.png).
+
+  Params:
+    org — a hash from site.data.repositories.github_orgs with keys:
+          name (required), title (optional), description (optional)
+{% endcomment %}
+
+<div class="repo repo-org p-2">
+  <a class="repo-org__card" href="https://github.com/{{ include.org.name }}" title="{{ include.org.title | default: include.org.name }}">
+    <img
+      class="repo-org__avatar"
+      src="https://github.com/{{ include.org.name }}.png?size=160"
+      alt="{{ include.org.name }} organization avatar"
+      loading="lazy"
+      width="72"
+      height="72"
+    >
+    <span class="repo-org__body">
+      <span class="repo-org__name">{{ include.org.name }}</span>
+      {% if include.org.title and include.org.title != include.org.name %}
+        <span class="repo-org__title">{{ include.org.title }}</span>
+      {% endif %}
+      {% if include.org.description %}
+        <span class="repo-org__desc">{{ include.org.description | strip_newlines }}</span>
+      {% endif %}
+    </span>
+  </a>
+</div>

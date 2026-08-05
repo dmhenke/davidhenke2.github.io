@@ -1,5 +1,20 @@
+# GitHub profile rendered as a stats card at the top of /repositories/
 github_users:
   - dmhenke
+
+# GitHub organizations rendered as linked cards.
+# github-readme-stats' /api/ endpoint only supports *user* accounts, so orgs are
+# rendered by _includes/repository/repo_org.liquid instead of repo_user.liquid.
+# `description` is optional — omit it and the card shows name + title only.
+github_orgs:
+  - name: BCM-GCID
+    title: Baylor College of Medicine — Genomic Center for Infectious Disease
+    description: >
+      Viral genomics pipelines and study code: virome processing, variant
+      calling, and norovirus challenge and clinical-trial analyses.
+  - name: TESAX-WW
+    title: # TODO: add the full organization name
+    description: # TODO: one line on what this org does
 
 repo_description_lines_max: 2
 

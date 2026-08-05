@@ -10,11 +10,8 @@ contact_note: >
   Best reached via LinkedIn or GitHub. Happy to discuss research, collaboration, or consulting.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   David Henke — Computational biologist at Baylor College of Medicine. Biomarker discovery, precision oncology, machine learning.
-footer_text: >
-  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-  Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
-keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
+footer_text: # leave empty to show only the copyright line
+keywords: computational biology, precision oncology, machine learning, biomarker discovery, network biology, DepMap, R, biostatistics
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
@@ -32,7 +29,7 @@ back_to_top: true # set to false to disable the back to top button
 repo_theme_light: default # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
 repo_theme_dark: dark # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
 repo_trophies:
-  enabled: true
+  enabled: false # gamified badges read as noise on an academic page
   theme_light: flat # https://github.com/ryo-ma/github-profile-trophy
   theme_dark: gitdimmed # https://github.com/ryo-ma/github-profile-trophy
 
@@ -44,10 +41,11 @@ external_services:
   github_profile_trophy_url: https://github-profile-trophy.vercel.app
 
 # -----------------------------------------------------------------------------
-# RSS Feed
+# RSS Feed — disabled
 # -----------------------------------------------------------------------------
-# will use title and url fields
-# Take a look to https://github.com/jekyll/jekyll-feed for more customization
+# jekyll-feed has been removed from the `plugins:` list below, so no feed.xml is
+# generated. To re-enable, add `- jekyll-feed` back to `plugins:` and add
+# `rss_icon: true` to _data/socials.yml.
 
 # -----------------------------------------------------------------------------
 # Layout
@@ -214,7 +212,6 @@ plugins:
   - jekyll-archives-v2
   - jekyll-cache-bust
   - jekyll-email-protect
-  - jekyll-feed
   - jekyll-get-json
   - jekyll-imagemagick
   - jekyll-jupyter-notebook
@@ -309,7 +306,7 @@ enable_publication_badges:
   altmetric: true # Altmetric badge (Customization options: https://badge-docs.altmetric.com/index.html)
   dimensions: true # Dimensions badge (Customization options: https://badge.dimensions.ai/)
   google_scholar: true # Google Scholar badge (https://scholar.google.com/intl/en/scholar/citations.html)
-  inspirehep: true # Inspire HEP badge (https://help.inspirehep.net/knowledge-base/citation-metrics/)
+  inspirehep: false # INSPIRE-HEP indexes high-energy physics only — not relevant here
 
 # Filter out certain bibtex entry keywords used internally from the bib output
 filtered_bibtex_keywords:
