@@ -44,13 +44,6 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/davidhenke2.github.io/blog/";
           },
-        },{id: "nav-mentoring",
-          title: "mentoring",
-          description: "Mentoring, peer review, and research-design advising.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/davidhenke2.github.io/teaching/";
-          },
         },{id: "post-significant-and-meaningless",
         
           title: "Significant and meaningless",
