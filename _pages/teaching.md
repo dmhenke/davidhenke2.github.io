@@ -3,8 +3,8 @@ layout: page
 permalink: /teaching/
 title: mentoring
 description: Mentoring, peer review, and research-design advising.
-nav: false
-nav_order: 6
+nav: true
+nav_order: 7
 ---
 
 I advise students and collaborators on data-driven research design, statistical

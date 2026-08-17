@@ -2,7 +2,7 @@
 layout: page
 title: LLM Google Colab Deployment
 description: Deploy and run LLMs in Google Colab — GPU-accelerated, no local setup required
-img: assets/img/dino.jpg
+img: assets/img/llm-colab.svg
 importance: 3
 category: work
 github: https://github.com/dmhenke/LLM_GColabDeployment

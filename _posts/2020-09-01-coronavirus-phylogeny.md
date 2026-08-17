@@ -5,7 +5,7 @@ date: 2020-09-01 00:00:00-0500
 last_updated: 2025-01-01
 description: Phylogenetic reconstruction of SARS-CoV-2 spike protein sequences from Baylor College of Medicine isolates and healthcare workers.
 tags: [SARS-CoV-2, phylogeny, bioinformatics]
-categories: [research]
+categories: [methods]
 related_posts: false
 ---
 
