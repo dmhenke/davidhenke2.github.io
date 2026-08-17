@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400" role="img" aria-labelledby="pdTitle pdDesc">
+  <title id="pdTitle">Preprint Digest pipeline</title>
+  <desc id="pdDesc">
+    Illustration of an automated literature pipeline: a broad stream of incoming preprint records from bioRxiv
+    and medRxiv passes through a language-model filter and emerges as a short ranked digest of the most
+    relevant papers.
+  </desc>
+
+  <defs>
+    <radialGradient id="pdBg" cx="72%" cy="18%" r="95%">
+      <stop offset="0%" stop-color="#33270f" />
+      <stop offset="100%" stop-color="#15110a" />
+    </radialGradient>
+
+    <linearGradient id="pdFunnel" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.06" />
+      <stop offset="55%" stop-color="#fbbf24" stop-opacity="0.22" />
+      <stop offset="100%" stop-color="#fcd34d" stop-opacity="0.10" />
+    </linearGradient>
+
+    <!-- an unread incoming record: faint, uniform, unranked -->
+    <g id="pdRaw">
+      <rect x="-15" y="-10" width="30" height="20" rx="2.5" fill="#f59e0b" fill-opacity="0.13" stroke="#f59e0b" stroke-opacity="0.42" stroke-width="1" />
+      <line x1="-10" y1="-4" x2="8" y2="-4" stroke="#fbbf24" stroke-opacity="0.5" stroke-width="1.4" stroke-linecap="round" />
+      <line x1="-10" y1="0" x2="10" y2="0" stroke="#fbbf24" stroke-opacity="0.34" stroke-width="1.4" stroke-linecap="round" />
+      <line x1="-10" y1="4" x2="3" y2="4" stroke="#fbbf24" stroke-opacity="0.34" stroke-width="1.4" stroke-linecap="round" />
+    </g>
+
+    <!-- a curated record: brighter, with a relevance bar -->
+    <g id="pdRanked">
+      <rect x="-58" y="-16" width="116" height="32" rx="4" fill="#fbbf24" fill-opacity="0.16" stroke="#fcd34d" stroke-opacity="0.85" stroke-width="1.3" />
+      <line x1="-49" y1="-7" x2="24" y2="-7" stroke="#fde68a" stroke-width="2.2" stroke-linecap="round" />
+      <line x1="-49" y1="-1" x2="40" y2="-1" stroke="#fcd34d" stroke-opacity="0.55" stroke-width="1.6" stroke-linecap="round" />
+      <line x1="-49" y1="4" x2="12" y2="4" stroke="#fcd34d" stroke-opacity="0.4" stroke-width="1.6" stroke-linecap="round" />
+    </g>
+  </defs>
+
+  <rect width="600" height="400" fill="url(#pdBg)" />
+
+  <!-- funnel: many in, few out -->
+  <path d="M40 60 L40 340 L330 262 L330 138 Z" fill="url(#pdFunnel)" />
+  <path d="M40 60 L330 138 M40 340 L330 262" stroke="#f59e0b" stroke-opacity="0.5" stroke-width="1.4" fill="none" />
+
+  <!-- incoming stream: dense, undifferentiated -->
+  <g>
+    <use href="#pdRaw" transform="translate(70,88)" />
+    <use href="#pdRaw" transform="translate(70,132)" />
+    <use href="#pdRaw" transform="translate(70,176)" />
+    <use href="#pdRaw" transform="translate(70,220)" />
+    <use href="#pdRaw" transform="translate(70,264)" />
+    <use href="#pdRaw" transform="translate(70,308)" />
+    <use href="#pdRaw" transform="translate(128,110)" />
+    <use href="#pdRaw" transform="translate(128,154)" />
+    <use href="#pdRaw" transform="translate(128,198)" />
+    <use href="#pdRaw" transform="translate(128,242)" />
+    <use href="#pdRaw" transform="translate(128,286)" />
+    <use href="#pdRaw" transform="translate(186,142)" />
+    <use href="#pdRaw" transform="translate(186,186)" />
+    <use href="#pdRaw" transform="translate(186,230)" />
+    <use href="#pdRaw" transform="translate(186,274)" />
+  </g>
+
+  <!-- the model: the narrow point everything passes through -->
+  <g transform="translate(268,200)">
+    <circle r="42" fill="#15110a" fill-opacity="0.85" stroke="#fcd34d" stroke-opacity="0.9" stroke-width="1.8" />
+    <circle r="42" fill="none" stroke="#fbbf24" stroke-opacity="0.28" stroke-width="10" />
+    <!-- three-layer network glyph -->
+    <g stroke="#fde68a" stroke-opacity="0.55" stroke-width="1">
+      <line x1="-20" y1="-14" x2="0" y2="-16" />
+      <line x1="-20" y1="-14" x2="0" y2="0" />
+      <line x1="-20" y1="0" x2="0" y2="-16" />
+      <line x1="-20" y1="0" x2="0" y2="16" />
+      <line x1="-20" y1="14" x2="0" y2="0" />
+      <line x1="-20" y1="14" x2="0" y2="16" />
+      <line x1="0" y1="-16" x2="20" y2="-8" />
+      <line x1="0" y1="0" x2="20" y2="-8" />
+      <line x1="0" y1="0" x2="20" y2="8" />
+      <line x1="0" y1="16" x2="20" y2="8" />
+    </g>
+    <g fill="#fde68a">
+      <circle cx="-20" cy="-14" r="3.2" />
+      <circle cx="-20" cy="0" r="3.2" />
+      <circle cx="-20" cy="14" r="3.2" />
+      <circle cx="0" cy="-16" r="3.2" />
+      <circle cx="0" cy="0" r="3.2" />
+      <circle cx="0" cy="16" r="3.2" />
+      <circle cx="20" cy="-8" r="3.2" />
+      <circle cx="20" cy="8" r="3.2" />
+    </g>
+  </g>
+
+  <!-- curated output: few, ranked -->
+  <g>
+    <use href="#pdRanked" transform="translate(470,132)" />
+    <use href="#pdRanked" transform="translate(470,200)" />
+    <use href="#pdRanked" transform="translate(470,268)" />
+  </g>
+
+  <!-- rank markers -->
+  <g fill="#fcd34d" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" text-anchor="middle">
+    <text x="396" y="136">01</text>
+    <text x="396" y="204">02</text>
+    <text x="396" y="272">03</text>
+  </g>
+
+  <g stroke="#fcd34d" stroke-opacity="0.6" stroke-width="1.3" fill="none" stroke-linecap="round">
+    <path d="M312 186 L404 132" />
+    <path d="M314 200 L404 200" />
+    <path d="M312 214 L404 268" />
+  </g>
+
+  <text x="40" y="376" fill="#fbbf24" fill-opacity="0.7" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12">bioRxiv + medRxiv &#8594; daily digest</text>
+</svg>
