@@ -144,6 +144,11 @@ ninja.data = [{
           description: "An investigation into the SARS-CoV-2 spike protein and BCM isolate phylogeny.",
           section: "Projects",handler: () => {
               window.location.href = "/davidhenke2.github.io/projects/5_project/";
+            },},{id: "projects-multifunction-solar-utah",
+          title: 'Multifunction Solar Utah',
+          description: "Solar sited where it does more than one job — generation paired with water conservation, dust suppression, and ecosystem protection",
+          section: "Projects",handler: () => {
+              window.location.href = "/davidhenke2.github.io/projects/6_project/";
             },},{
         id: 'social-github',
         title: 'GitHub',
