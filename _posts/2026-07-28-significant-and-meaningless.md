@@ -6,6 +6,7 @@ description: On the gap between a p-value that clears threshold and a finding a 
 tags: [reproducibility, machine-learning]
 categories: [commentary]
 related_posts: false
+published: false # hidden until final edit; remove this line and the Draft banner to publish
 ---
 
 > **Draft.** Written as a starting point — edit freely before publishing.

@@ -13,7 +13,7 @@ description: > # the ">" symbol means to ignore newlines until "footer_text:"
 footer_text: # leave empty to show only the copyright line
 keywords: computational biology, precision oncology, machine learning, biomarker discovery, network biology, DepMap, R, biostatistics
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: 🧬 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://dmhenke.github.io # the base hostname & protocol for your site
 baseurl: /davidhenke2.github.io # project site: served at dmhenke.github.io/davidhenke2.github.io/
@@ -66,9 +66,9 @@ max_width: 930px
 # -----------------------------------------------------------------------------
 # Display links to the page with a preview object on social media.
 # see https://schema.org/docs/faq.html for more information
-serve_og_meta: false # Include Open Graph meta tags in the HTML head
-serve_schema_org: false # Include Schema.org in the HTML head
-og_image: # The site-wide (default for all links) Open Graph preview image
+serve_og_meta: true # Include Open Graph meta tags in the HTML head
+serve_schema_org: true # Include Schema.org in the HTML head
+og_image: https://dmhenke.github.io/davidhenke2.github.io/assets/img/prof_pic.jpg # The site-wide (default for all links) Open Graph preview image
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
@@ -119,24 +119,14 @@ giscus:
   lang: en
 
 # Disqus comments (DEPRECATED)
-disqus_shortname: al-folio # put your disqus shortname
+disqus_shortname: # put your disqus shortname (unused; comments disabled)
 # https://help.disqus.com/en/articles/1717111-what-s-a-shortname
 
 # External sources.
 # If you have blog posts published on medium.com or other external sources,
 # you can display them in your blog by adding a link to the RSS feed.
 # Optional: Set default categories and tags for posts from each source.
-external_sources:
-  - name: medium.com
-    rss_url: https://medium.com/@al-folio/feed
-    categories: [external-posts]
-    tags: [medium]
-  - name: Google Blog
-    posts:
-      - url: https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/
-        published_date: 2024-05-14
-    categories: [external-posts]
-    tags: [google]
+external_sources: [] # al-folio demo feeds (Medium, Google Blog) removed
 
 # -----------------------------------------------------------------------------
 # Newsletter
@@ -200,6 +190,15 @@ exclude:
   - README.md
   - readme_preview/
   - vendor
+  - AGENTS.md
+  - ANALYTICS.md
+  - CLAUDE.md
+  - QUICKSTART.md
+  - SEO.md
+  - SITE_REVIEW.md
+  - TROUBLESHOOTING.md
+  - requirements.txt
+  - .site_changes.patch
 keep_files:
   - CNAME
   - .nojekyll

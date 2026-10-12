@@ -6,6 +6,7 @@ description: Penalized regression is indifferent to which member of a correlated
 tags: [network-biology, machine-learning, R]
 categories: [methods]
 related_posts: false
+published: false # hidden until final edit; remove this line and the Draft banner to publish
 ---
 
 > **Draft.** Written as a starting point — edit freely before publishing.

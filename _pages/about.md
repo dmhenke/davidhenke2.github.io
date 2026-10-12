@@ -8,8 +8,8 @@ profile:
   image: prof_pic.jpg
   image_circular: false # true, false
   more_info: >
-    <p>Baylor College of Medicine</p>
-    <p>Houston, TX</p>
+    <p>Baylor College of Medicine · Houston, TX</p>
+    <p>Based in Salt Lake City, UT</p>
 
 network_hero: true
 hero_eyebrow: "Computational Biology · Precision Oncology"

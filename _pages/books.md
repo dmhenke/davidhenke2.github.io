@@ -2,6 +2,7 @@
 layout: book-shelf
 title: bookshelf
 permalink: /books/
+published: false # demo bookshelf; no books yet
 nav: false
 collection: books
 ---
