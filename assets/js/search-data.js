@@ -44,62 +44,7 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/davidhenke2.github.io/blog/";
           },
-        },{id: "post-significant-and-meaningless",
-        
-          title: "Significant and meaningless",
-        
-        description: "On the gap between a p-value that clears threshold and a finding a biologist can act on — and why closing it is a modeling problem, not a statistics problem.",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/davidhenke2.github.io/blog/2026/significant-and-meaningless/";
-          
-        },
-      },{id: "post-reading-depmap-without-fooling-yourself",
-        
-          title: "Reading DepMap without fooling yourself",
-        
-        description: "Four things that quietly ruin biomarker analyses of cancer dependency screens — common essentials, lineage confounding, score scale, and the variance filter you should apply first.",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/davidhenke2.github.io/blog/2026/reading-depmap-without-fooling-yourself/";
-          
-        },
-      },{id: "post-why-the-lasso-picks-the-wrong-gene",
-        
-          title: "Why the LASSO picks the wrong gene",
-        
-        description: "Penalized regression is indifferent to which member of a correlated group it selects. Biology is not. A short note on encoding network structure into the penalty.",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/davidhenke2.github.io/blog/2026/lasso-picks-the-wrong-gene/";
-          
-        },
-      },{id: "post-google-gemini-updates-flash-1-5-gemma-2-and-project-astra",
-        
-          title: 'Google Gemini updates: Flash 1.5, Gemma 2 and Project Astra <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
-        
-        description: "We’re sharing updates across our Gemini family of models and a glimpse of Project Astra, our vision for the future of AI assistants.",
-        section: "Posts",
-        handler: () => {
-          
-            window.open("https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/", "_blank");
-          
-        },
-      },{id: "post-displaying-external-posts-on-your-al-folio-blog",
-        
-          title: 'Displaying External Posts on Your al-folio Blog <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
-        
-        description: "",
-        section: "Posts",
-        handler: () => {
-          
-            window.open("https://medium.com/@al-folio/displaying-external-posts-on-your-al-folio-blog-b60a1d241a0a?source=rss-17feae71c3c4------2", "_blank");
-          
-        },
-      },{id: "post-a-peek-into-coronavirus-phylogeny",
+        },{id: "post-a-peek-into-coronavirus-phylogeny",
         
           title: "A Peek Into Coronavirus Phylogeny",
         
@@ -176,6 +121,13 @@ ninja.data = [{
         section: 'Socials',
         handler: () => {
           window.open("https://scholar.google.com/citations?user=fCbxT2wAAAAJ", "_blank");
+        },
+      },{
+        id: 'social-orcid',
+        title: 'ORCID',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://orcid.org/0000-0003-2911-2834", "_blank");
         },
       },{
       id: 'light-theme',
