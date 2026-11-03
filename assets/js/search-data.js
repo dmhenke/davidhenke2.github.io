@@ -94,6 +94,11 @@ ninja.data = [{
           description: "Solar sited where it does more than one job — generation paired with water conservation, dust suppression, and ecosystem protection",
           section: "Projects",handler: () => {
               window.location.href = "/davidhenke2.github.io/projects/6_project/";
+            },},{id: "projects-drug2diseasediscovery",
+          title: 'Drug2DiseaseDiscovery',
+          description: "Single-cell foundation-model embeddings and signature reversal to nominate candidate therapeutics for lupus",
+          section: "Projects",handler: () => {
+              window.location.href = "/davidhenke2.github.io/projects/7_project/";
             },},{
         id: 'social-github',
         title: 'GitHub',
