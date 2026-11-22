@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400" role="img" aria-labelledby="bplTitle bplDesc">
+  <title id="bplTitle">BioPrimeLASSO network-primed feature selection</title>
+  <desc id="bplDesc">
+    Schematic of a protein-protein interaction network around a target gene. Neighbours are shaded by interaction
+    confidence, and one high-confidence neighbour is highlighted as the selected biomarker.
+  </desc>
+
+  <defs>
+    <radialGradient id="bplBg" cx="72%" cy="18%" r="95%">
+      <stop offset="0%" stop-color="#0f3330" />
+      <stop offset="100%" stop-color="#0a1315" />
+    </radialGradient>
+  </defs>
+
+  <rect width="600" height="400" fill="url(#bplBg)" />
+
+  <!-- Edges: stroke weight tracks interaction confidence -->
+  <g stroke="#6ee7b7" stroke-linecap="round" fill="none">
+    <line x1="300" y1="200" x2="420" y2="130" stroke-width="5" stroke-opacity="0.95" />
+    <line x1="300" y1="200" x2="200" y2="120" stroke-width="3.5" stroke-opacity="0.7" />
+    <line x1="300" y1="200" x2="190" y2="270" stroke-width="3.5" stroke-opacity="0.7" />
+    <line x1="300" y1="200" x2="400" y2="290" stroke-width="2.5" stroke-opacity="0.5" />
+    <line x1="200" y1="120" x2="110" y2="90" stroke-width="1.5" stroke-opacity="0.35" />
+    <line x1="200" y1="120" x2="150" y2="190" stroke-width="1.5" stroke-opacity="0.35" />
+    <line x1="190" y1="270" x2="100" y2="300" stroke-width="1.5" stroke-opacity="0.35" />
+    <line x1="400" y1="290" x2="490" y2="320" stroke-width="1.5" stroke-opacity="0.35" />
+    <line x1="400" y1="290" x2="340" y2="345" stroke-width="1.5" stroke-opacity="0.35" />
+    <line x1="420" y1="130" x2="510" y2="100" stroke-width="1.5" stroke-opacity="0.35" />
+    <line x1="420" y1="130" x2="500" y2="200" stroke-width="1.5" stroke-opacity="0.35" />
+  </g>
+
+  <!-- Low-confidence neighbours -->
+  <g fill="#134e4a" stroke="#2dd4bf" stroke-opacity="0.5" stroke-width="1.5">
+    <circle cx="110" cy="90" r="11" />
+    <circle cx="150" cy="190" r="11" />
+    <circle cx="100" cy="300" r="11" />
+    <circle cx="490" cy="320" r="11" />
+    <circle cx="340" cy="345" r="11" />
+    <circle cx="510" cy="100" r="11" />
+    <circle cx="500" cy="200" r="11" />
+  </g>
+
+  <!-- Moderate-confidence neighbours -->
+  <g fill="#0f9d7a" stroke="#6ee7b7" stroke-width="1.5">
+    <circle cx="200" cy="120" r="16" />
+    <circle cx="190" cy="270" r="16" />
+    <circle cx="400" cy="290" r="14" />
+  </g>
+
+  <!-- Target gene -->
+  <circle cx="300" cy="200" r="26" fill="#d1fae5" />
+  <text x="300" y="205" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="13" font-weight="700" fill="#0a1315">EGFR</text>
+
+  <!-- Selected biomarker -->
+  <circle cx="420" cy="130" r="30" fill="none" stroke="#fbbf24" stroke-width="2" stroke-dasharray="4 5" />
+  <circle cx="420" cy="130" r="21" fill="#fbbf24" />
+  <text x="420" y="135" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="12" font-weight="700" fill="#0a1315">GAB2</text>
+</svg>

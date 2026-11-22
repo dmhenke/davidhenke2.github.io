@@ -7,42 +7,42 @@ ninja.data = [{
     title: "About",
     section: "Navigation",
     handler: () => {
-      window.location.href = "/davidhenke2.github.io/";
+      window.location.href = "/davidhenke.github.io/";
     },
   },{id: "nav-publications",
           title: "publications",
           description: "Publications in reversed chronological order.",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/davidhenke2.github.io/publications/";
+            window.location.href = "/davidhenke.github.io/publications/";
           },
         },{id: "nav-projects",
           title: "projects",
           description: "Open-source tools and deployments for LLMs, scientific literature, and biomarker discovery.",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/davidhenke2.github.io/projects/";
+            window.location.href = "/davidhenke.github.io/projects/";
           },
         },{id: "nav-repositories",
           title: "repositories",
           description: "Open-source code behind my research — network-informed ML, viral genomics, and LLM tooling.",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/davidhenke2.github.io/repositories/";
+            window.location.href = "/davidhenke.github.io/repositories/";
           },
         },{id: "nav-cv",
           title: "CV",
           description: "Curriculum vitae for David M. Henke — computational biologist and biostatistician at Baylor College of Medicine.",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/davidhenke2.github.io/cv/";
+            window.location.href = "/davidhenke.github.io/cv/";
           },
-        },{id: "nav-notes",
-          title: "notes",
-          description: "",
+        },{id: "nav-consulting",
+          title: "consulting",
+          description: "Independent statistical consulting for clinical, genomic, and early-stage biotech studies.",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/davidhenke2.github.io/blog/";
+            window.location.href = "/davidhenke.github.io/consulting/";
           },
         },{id: "post-a-peek-into-coronavirus-phylogeny",
         
@@ -52,7 +52,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/davidhenke2.github.io/blog/2020/coronavirus-phylogeny/";
+            window.location.href = "/davidhenke.github.io/blog/2020/coronavirus-phylogeny/";
           
         },
       },{id: "news-published-a-phylogenetic-analysis-of-sars-cov-2-spike-sequences-from-bcm-isolates-a-peek-into-coronavirus-phylogeny",
@@ -64,41 +64,66 @@ ninja.data = [{
           section: "News",},{id: "news-bioprimelasso-published-in-npj-precision-oncology-bio-primed-machine-learning-to-enhance-discovery-of-relevant-biomarkers",
           title: 'BioPrimeLASSO published in npj Precision Oncology — Bio-primed machine learning to enhance discovery...',
           description: "",
+          section: "News",},{id: "news-new-paper-in-scientific-reports-probe-based-capture-enrichment-for-complete-genomes-of-respiratory-syncytial-virus-and-human-norovirus",
+          title: 'New paper in Scientific Reports: probe-based capture enrichment for complete genomes of respiratory...',
+          description: "",
+          section: "News",},{id: "news-new-preprint-on-biorxiv-evolutionary-dynamics-of-rsv-across-the-pre-pandemic-pandemic-and-post-pandemic-periods-in-houston",
+          title: 'New preprint on bioRxiv: evolutionary dynamics of RSV across the pre-pandemic, pandemic, and...',
+          description: "",
+          section: "News",},{id: "news-new-paper-in-viruses-strain-specific-viral-kinetics-cytokine-response-and-cellular-damage-in-human-nasal-organoids-infected-with-sars-cov-2",
+          title: 'New paper in Viruses: strain-specific viral kinetics, cytokine response, and cellular damage in...',
+          description: "",
+          section: "News",},{id: "news-started-hmpv-research-open-pipelines-for-comparative-genomics-of-human-metapneumovirus-genotypes",
+          title: 'Started HMPV Research: open pipelines for comparative genomics of human metapneumovirus genotypes.',
+          description: "",
+          section: "News",},{id: "news-started-drug2diseasediscovery-single-cell-foundation-model-embeddings-and-signature-reversal-to-nominate-candidate-therapeutics-for-lupus-early-and-exploratory",
+          title: 'Started Drug2DiseaseDiscovery: single-cell foundation-model embeddings and signature reversal to nominate candidate therapeutics for...',
+          description: "",
           section: "News",},{id: "projects-preprint-digest",
           title: 'Preprint Digest',
           description: "Automated daily digest of scientific preprints powered by LLMs",
           section: "Projects",handler: () => {
-              window.location.href = "/davidhenke2.github.io/projects/1_project/";
+              window.location.href = "/davidhenke.github.io/projects/1_project/";
             },},{id: "projects-individual-llm-deployment",
           title: 'Individual LLM Deployment',
           description: "Open-source LLMs configured for personal or institutional deployment",
           section: "Projects",handler: () => {
-              window.location.href = "/davidhenke2.github.io/projects/2_project/";
+              window.location.href = "/davidhenke.github.io/projects/2_project/";
             },},{id: "projects-llm-google-colab-deployment",
           title: 'LLM Google Colab Deployment',
           description: "Deploy and run LLMs in Google Colab — GPU-accelerated, no local setup required",
           section: "Projects",handler: () => {
-              window.location.href = "/davidhenke2.github.io/projects/3_project/";
+              window.location.href = "/davidhenke.github.io/projects/3_project/";
             },},{id: "projects-hmpv-research",
           title: 'HMPV Research',
           description: "Bioinformatics research on Human Metapneumovirus (HMPV) using computational methods for genomic analysis.",
           section: "Projects",handler: () => {
-              window.location.href = "/davidhenke2.github.io/projects/4_project/";
+              window.location.href = "/davidhenke.github.io/projects/4_project/";
             },},{id: "projects-coronavirus-phylogeny",
           title: 'Coronavirus Phylogeny',
           description: "An investigation into the SARS-CoV-2 spike protein and BCM isolate phylogeny.",
           section: "Projects",handler: () => {
-              window.location.href = "/davidhenke2.github.io/projects/5_project/";
+              window.location.href = "/davidhenke.github.io/projects/5_project/";
             },},{id: "projects-multifunction-solar-utah",
           title: 'Multifunction Solar Utah',
           description: "Solar sited where it does more than one job — generation paired with water conservation, dust suppression, and ecosystem protection",
           section: "Projects",handler: () => {
-              window.location.href = "/davidhenke2.github.io/projects/6_project/";
+              window.location.href = "/davidhenke.github.io/projects/6_project/";
             },},{id: "projects-drug2diseasediscovery",
           title: 'Drug2DiseaseDiscovery',
           description: "Single-cell foundation-model embeddings and signature reversal to nominate candidate therapeutics for lupus",
           section: "Projects",handler: () => {
-              window.location.href = "/davidhenke2.github.io/projects/7_project/";
+              window.location.href = "/davidhenke.github.io/projects/7_project/";
+            },},{id: "projects-bioprimelasso",
+          title: 'BioPrimeLASSO',
+          description: "Network-informed LASSO that encodes protein–protein interactions into the penalty to find biologically relevant biomarkers",
+          section: "Projects",handler: () => {
+              window.location.href = "/davidhenke.github.io/projects/8_project/";
+            },},{id: "projects-crypto-tracking",
+          title: 'Crypto Tracking',
+          description: "Bitcoin, Ethereum and Cardano against the spot crypto ETFs — premiums, fee drag and return statistics, updated daily",
+          section: "Projects",handler: () => {
+              window.location.href = "/davidhenke.github.io/projects/9_project/";
             },},{
         id: 'social-github',
         title: 'GitHub',
