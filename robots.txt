@@ -1,4 +1,0 @@
-User-agent: *
-Disallow:
-
-Sitemap: https://dmhenke.github.io/davidhenke.github.io/sitemap.xml
